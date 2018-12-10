@@ -5,7 +5,8 @@
 
 [centos-gluster41]
 name=CentOS-$releasever - Gluster 4.1 (Long Term Maintanance)
-baseurl=http://mirror.centos.org/$contentdir/$releasever/storage/$basearch/gluster-4.1/
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=storage-gluster-4.1
+#baseurl=http://mirror.centos.org/$contentdir/$releasever/storage/$basearch/gluster-4.1/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
