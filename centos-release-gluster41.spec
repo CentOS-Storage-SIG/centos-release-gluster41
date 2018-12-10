@@ -1,7 +1,7 @@
 Summary: Gluster 4.1 (Long Term Stable) packages from the CentOS Storage SIG repository
 Name: centos-release-gluster41
 Version: 1.0
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv2
 URL: http://wiki.centos.org/SpecialInterestGroup/Storage
 Source0: CentOS-Gluster-4.1.repo
@@ -39,6 +39,9 @@ sed -i 's/i\$contentdir/centos/g' %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-
 %config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-Gluster-4.1.repo
 
 %changelog
+* Mon Dec 10 2018 Anssi Johansson <avij@centosproject.org> - 1.0-4
+- Use mirrorlist.c.o instead of mirror.c.o
+
 * Tue Jul 31 2018 Niels de Vos <ndevos@redhat.com> - 1.0-3
 - Correct handling of altarch repositories on CentOS-6
 
